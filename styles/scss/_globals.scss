@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('../../images/bg-pattern-top.svg')  left -756px top -612px no-repeat , url('../../images/bg-pattern-bottom.svg') right -781px bottom -612px no-repeat, $darkCyan;
+
+  @include breakpoint {
+    background-position: left -285px top -512px, right -231px bottom -632px;
+  }
+}

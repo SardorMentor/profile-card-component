@@ -1,0 +1,6 @@
+// breakpoint
+@mixin breakpoint {
+  @media (min-width: 375px) {
+    @content;
+  }
+}
